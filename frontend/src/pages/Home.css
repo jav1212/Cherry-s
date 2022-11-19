@@ -1,0 +1,14 @@
+.fondo-img {
+    filter: grayscale(30%);
+    -webkit-filter: grayscale(30%);
+}
+
+p {
+    font-family: Caudex;
+    font-size: 20px;
+}
+
+.caroussel-text { 
+    font-size: calc(100% + 1vw + 2vh);
+    font-family: Caudex;
+}
