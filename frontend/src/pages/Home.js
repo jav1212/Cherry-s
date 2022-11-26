@@ -7,24 +7,28 @@ import productores from './img/productores.jpg'
 import expimp from './img/exportacionimportacion.jpg'
 import evalua from './img/evaluacion.jpg'
 import Button from 'react-bootstrap/Button';
+import Navigation from '../browser/Navigation';
+import Footer from '../browser/Footer'
 
 export default function Home() {
     return (
         <>
             <Carousel fade>
                 <Carousel.Item interval={2000} >
-                    <img src={fondo1} className='img-fluid w-100 fondo-img' alt='' />
+                    <Navigation/>
+                    <img src={fondo1} className='img-fluid fondo-img' alt='' />
                     <Carousel.Caption >
-                            <h1>
+                            <h1 className=' caroussel-text'>
                                 La cereza es un fruto que puede consumirse fresco o utilizarse en la elaboración de tartas, 
                                 mousses, mermeladas y compotas.
                             </h1>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
+                    <Navigation/>
                     <img src={fondo2} className='img-fluid w-100 fondo-img' alt=''/>
                     <Carousel.Caption>
-                        <h1>
+                        <h1 className=' caroussel-text'>
                             El cerezo tuvo su origen probablemente en el mar Negro y en el mar Caspio,
                             difundiéndose después hacia Europa y Asia,
                             llevado por los pájaros y las migraciones humanas.
@@ -32,9 +36,10 @@ export default function Home() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
+                    <Navigation/>
                     <img src={fondo3} className='img-fluid w-100 fondo-img'  alt=''/>
                     <Carousel.Caption>
-                        <h1>
+                        <h1 className=' caroussel-text'>
                             Las principales especies de cerezo cultivadas en el mundo son el cerezo dulce (Prunus avium), 
                             el guindo (P. cerasus) y el cerezo "Duke", híbrido de los anteriores.
                         </h1>
@@ -50,7 +55,7 @@ export default function Home() {
                             entre el Mar Negro y el Mar Caspio, y el de la cereza ácida entre
                             los Alpes Suizos y el Mar Adriático....
                         </p>
-                    <Button className=' w-25 mt-4 text-black bg-light rounded-0 border border-2 border-dark'>Ver mas</Button>
+                    <Button href='/mantenimiento' className=' w-25 mt-4 text-black bg-light rounded-0 border border-2 border-dark'>Ver mas</Button>
                 </div>
                 <img alt='' src={productores} className=' img-fluid w-50'/>
             </div>
@@ -63,7 +68,7 @@ export default function Home() {
                         siendo comercializado por un total de $3,92MM. 
                         Entre 2019 y 2020 las exportaciones de Cerezas, frescas grew en un 5,45%, desde $3,71MM a $3,92MM..
                     </p>
-                    <Button className=' w-25 mt-4 text-black bg-light rounded-0 border border-2 border-dark'>Ver mas</Button>
+                    <Button href='/exportimport' className=' w-25 mt-4 text-black bg-light rounded-0 border border-2 border-dark'>Ver mas</Button>
                 </div>
             </div>
             <div className='container d-flex align-items-center mt-5 mb-5'>
@@ -74,29 +79,10 @@ export default function Home() {
                             así evaluar su efecto sobre la calidad y 
                             vida postcosecha de distintas variedades de cerezas...
                         </p>
-                    <Button className=' w-25 mt-4 text-black bg-light rounded-0 border border-2 border-dark'>Ver mas</Button>
+                    <Button href='/evaluaciones' className=' w-25 mt-4 text-black bg-light rounded-0 border border-2 border-dark'>Ver mas</Button>
                 </div>
                 <img alt='' src={evalua} className=' img-fluid w-50'/>
             </div>
         </>
-        /*
-        <div classNameName="home">
-            <img classNameName='img-home' src= {fondo} alt='cerezas'/>
-            <div classNameName="info-home">
-                La cereza es una fruta diversa en vitaminas y minerales.
-            </div>
-            <div classNameName="productores-home">
-                <div classNameName="productores-home-column">
-                    <h1>Productores</h1>
-                    <p> Se producen más de 2.000.000 de toneladas de cerezas al año en todo el mundo.
-                    No se sabe con exactitud el lugar de procedencia de tan exquisita fruta,
-                    se cree que el origen de la cereza dulce está en la región comprendida
-                    entre el Mar Negro y el Mar Caspio, y el de la cereza ácida entre
-                    los Alpes Suizos y el Mar Adriático....</p>
-                    <div classNameName='btn'>Ver mas</div>
-                </div>
-                <img classNameName='img-home-productores' src= {productores} alt='productores'/>
-            </div>
-        </div>*/
     )
 }

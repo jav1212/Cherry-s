@@ -1,7 +1,5 @@
 import './App.css';
 
-import Navigation from './browser/Navigation';
-import Footer from './browser/Footer';
 import Home from './pages/Home';
 import Variedades from './pages/Variedades';
 import Mantenimiento from './pages/Mantenimiento';
@@ -10,27 +8,35 @@ import Evaluaciones from './pages/Evaluaciones';
 import Recetas from './pages/Recetas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route} from 'react-router-dom'
-import Multisteps from './forms/Multisteps';
-import VariedadForm from './forms/VariedadForm';
-import Confirmation from './forms/Confirmation';
+import FormVariedad from './forms/variedad/FormVariedad';
+import FormPrecio from './forms/variedad/FormPrecio';
+import FormPais from './forms/mantenimiento/FormPais';
+import FormCiudad from './forms/mantenimiento/FormCiudad';
+import FormRegion from './forms/mantenimiento/FormRegion';
+import FormAsociacionRegional from './forms/mantenimiento/FormAsociacionRegionals';
+import FormEmpresaProductora from './forms/mantenimiento/FormEmpresaProductora';
 
 function App() {
   return (
     <div>
-      <Navigation/>
         <div>
-          <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/home' element={<Home/>} />
-            <Route path='/variedades' element={<Variedades/>} />
-                <Route path='/multisteps' element={<Multisteps/>}/>
-            <Route path='/mantenimiento' element={<Mantenimiento/>} />
-            <Route path='/exportimport' element={<ExportImport/>} />
-            <Route path='/evaluaciones' element={<Evaluaciones/>} />
-            <Route path='/recetas' element={<Recetas/>} />
-          </Routes>
+            <Routes>
+                <Route path='/' element={<Home/>} />
+                <Route path='/home' element={<Home/>} />
+                <Route path='/variedades' element={<Variedades/>} />
+                    <Route path='/formvariedad' element={<FormVariedad/>}/>
+                    <Route path='/formprecio' element={<FormPrecio/>}/>
+                <Route path='/mantenimiento' element={<Mantenimiento/>} />
+                    <Route path='/formpais' element={<FormPais/>}/>
+                    <Route path='/formciudad' element={<FormCiudad/>}/>
+                    <Route path='/formregion' element={<FormRegion/>}/>
+                    <Route path='/formasociacionregional' element={<FormAsociacionRegional/>}/>
+                    <Route path='/formempresaproductora' element={<FormEmpresaProductora/>}/>
+                <Route path='/exportimport' element={<ExportImport/>} />
+                <Route path='/evaluaciones' element={<Evaluaciones/>} />
+                <Route path='/recetas' element={<Recetas/>} />
+            </Routes>
         </div>
-      <Footer/>
     </div>
   );
 }

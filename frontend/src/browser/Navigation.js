@@ -1,4 +1,3 @@
-
 import nav from './stylesNav.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -8,8 +7,8 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export default function Navigation() {
     return(
-        <Navbar collapseOnSelect expand="lg" className='nav position-absolute'>
-            <Container className=' w-auto'>
+        <Navbar collapseOnSelect expand="lg" className=' bg-dark'>
+            <Container className='container w-auto'>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className='nav'>

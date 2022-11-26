@@ -1,23 +1,30 @@
 import './Variedades.css'
 import fondo from './img/variedades.jpg'
-import Button from 'react-bootstrap/Button';
-import {Link} from "react-router-dom";
+import Navigation from '../browser/Navigation';
+import Button from 'react-bootstrap/esm/Button';
 
 export default function Variedades() {
+
     return (
         <>
-            <img className=' img-fluid w-100' src= {fondo} alt='variedades'/>
-            <div className='div-bg1 d-flex align-items-center'>
-                <div className='container d-flex align-items-center justify-content-between'>
-                    <p className=' mb-0 text-white'>Puedes agregar variedades a tus cultivos</p>
-                    <Button as={Link} to='/multisteps'
-                        className=' w-auto text-white text-black bg-transparent rounded-0 border border-2 border-white'>
-                            <Link to={'/multisteps'}></Link>
-                            Registrar
-                    </Button>
-                </div>
+            <figure className='figure w-100'>
+                <Navigation/>
+                <img className=' img-fluid w-100' src= {fondo} alt='variedades'/>
+            </figure>
+            <div>
+                <h1 className='text-center'>Registros</h1>
             </div>
-
+            <div className=' d-flex align-items-center justify-content-center gap-4'>
+                <Button href='/formvariedad' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Variedad</Button>
+                <Button href='/formprecio' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Precio</Button>
+            </div>
         </>
     )
+
+    /*
+        
+    <Button as={Link} to='/multisteps'
+                        className=' w-auto text-white text-black bg-transparent rounded-0 border border-2 border-white'>
+                            Registrar
+                    </Button> */
 }

@@ -1,19 +1,1 @@
-p {
-    font-family: Caudex;
-    font-size: 30px;
-    font-weight: 100;
-}
 
-.div-bg1 {
-    height: 100px;
-    background: #505987;
-}
-
-.div-bg1:hover{
-    background: #505987;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
