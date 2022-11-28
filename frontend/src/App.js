@@ -15,6 +15,8 @@ import FormCiudad from './forms/mantenimiento/FormCiudad';
 import FormRegion from './forms/mantenimiento/FormRegion';
 import FormAsociacionRegional from './forms/mantenimiento/FormAsociacionRegionals';
 import FormEmpresaProductora from './forms/mantenimiento/FormEmpresaProductora';
+import FormRamasNegocios from './forms/mantenimiento/FormRamasNegocio';
+import FormEmpresaProveedora from './forms/mantenimiento/FormEmpresasProveedora';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
                     <Route path='/formregion' element={<FormRegion/>}/>
                     <Route path='/formasociacionregional' element={<FormAsociacionRegional/>}/>
                     <Route path='/formempresaproductora' element={<FormEmpresaProductora/>}/>
+                    <Route path='/formramasnegocio' element={<FormRamasNegocios/>}/>
+                    <Route path='/formempresaproveedora' element={<FormEmpresaProveedora/>}/>
                 <Route path='/exportimport' element={<ExportImport/>} />
                 <Route path='/evaluaciones' element={<Evaluaciones/>} />
                 <Route path='/recetas' element={<Recetas/>} />

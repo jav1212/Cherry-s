@@ -1,7 +1,7 @@
 import './Mantenimiento.css'
 import Navigation from '../browser/Navigation';
 import fondo from './img/mantenimiento.jpg'
-import Button from 'react-bootstrap/esm/Button';
+import Button from 'react-bootstrap/esm/Button';  
 
 export default function Mantenimiento() {
     return (
@@ -19,8 +19,8 @@ export default function Mantenimiento() {
                 <Button href='/formregion' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Region</Button>
                 <Button href='/formasociacionregional' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Asociacion Regional</Button>
                 <Button href='/formempresaproductora' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Empresa Productora</Button>
-                <Button href='/formprecio' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Ramas de Negocio</Button>
-                <Button href='/formvariedad' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Empresas Proveedoras</Button>
+                <Button href='/formramasnegocio' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Ramas de Negocio</Button>
+                <Button href='/formempresaproveedora' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Empresas Proveedoras</Button>
                 <Button href='/formprecio' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Cultivos</Button>
                 <Button href='/formvariedad' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Produccion anual</Button>
                 <Button href='/formprecio' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Convenios con Asociacion Regional</Button>
