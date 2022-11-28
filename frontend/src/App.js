@@ -17,6 +17,11 @@ import FormAsociacionRegional from './forms/mantenimiento/FormAsociacionRegional
 import FormEmpresaProductora from './forms/mantenimiento/FormEmpresaProductora';
 import FormRamasNegocios from './forms/mantenimiento/FormRamasNegocio';
 import FormEmpresaProveedora from './forms/mantenimiento/FormEmpresasProveedora';
+import FormCultivo from './forms/mantenimiento/FormCultivo';
+import FormProduccionAnual from './forms/mantenimiento/FormProduccionAnual';
+import FormConvAsocReg from './forms/mantenimiento/FormConvAsocReg';
+import FormCatalogo from './forms/mantenimiento/FormCatalogo';
+import FormConvenioProveedor from './forms/mantenimiento/FormConvenioProveedor';
 
 function App() {
   return (
@@ -36,6 +41,11 @@ function App() {
                     <Route path='/formempresaproductora' element={<FormEmpresaProductora/>}/>
                     <Route path='/formramasnegocio' element={<FormRamasNegocios/>}/>
                     <Route path='/formempresaproveedora' element={<FormEmpresaProveedora/>}/>
+                    <Route path='/formcultivo' element={<FormCultivo/>}/>
+                    <Route path='/formproduccionanual' element={<FormProduccionAnual/>}/>
+                    <Route path='/formconvenioasociacion' element={<FormConvAsocReg/>}/>
+                    <Route path='/formcatalogo' element={<FormCatalogo/>}/>
+                    <Route path='/formconvenioproveedor' element={<FormConvenioProveedor/>}/>
                 <Route path='/exportimport' element={<ExportImport/>} />
                 <Route path='/evaluaciones' element={<Evaluaciones/>} />
                 <Route path='/recetas' element={<Recetas/>} />
