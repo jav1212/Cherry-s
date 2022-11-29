@@ -30,24 +30,24 @@ export default function FormPrograma(){
                 <Form className='w-100' onSubmit= {handleSubmit}>
                     <Form.Group>
                         <Form.Label>Empresa Productora</Form.Label>
-                            <Form.Group as='select' type='text' name='id_prod' onChange={handleChange}>
+                            <Form.Select type='text' name='id_prod' onChange={handleChange}>
                                 <option>Empresa 1</option>
                                 <option>Empresa 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Variedad</Form.Label>
-                            <Form.Group as='select' type='text' name='id_crz' onChange={handleChange}>
+                            <Form.Select type='text' name='id_crz' onChange={handleChange}>
                                 <option>Variedad 1</option>
                                 <option>Variedad 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Personas</Form.Label>
-                            <Form.Group as='select' type='text' name='id_per' onChange={handleChange}>
+                            <Form.Select type='text' name='id_per' onChange={handleChange}>
                                 <option>Persona 1</option>
                                 <option>Persona 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Button className='mt-4'variant="primary" type="submit">
                             Submit

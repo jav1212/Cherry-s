@@ -27,6 +27,12 @@ import FormPersona from './forms/mantenimiento/FormPersonas';
 import FormEmpresaCliente from './forms/exportimport/FormEmpresaCliente';
 import FormFormaPago from './forms/exportimport/FormFormaPago';
 import FormContrato from './forms/exportimport/FormContrato';
+import FormRenovacion from './forms/exportimport/FormRenovacion'
+import FormCuotas from './forms/exportimport/FormPagoCuota';
+import FormEnvio from './forms/exportimport/FormEnvio';
+import FormUnidad from './forms/recetas/FormUnidad'
+import FormIngrediente from './forms/recetas/FormIngrediente'
+import FormReceta from './forms/recetas/FormReceta'
 
 function App() {
   return (
@@ -56,9 +62,15 @@ function App() {
                 <Route path='/exportimport' element={<ExportImport/>} />
                     <Route path='/formempresacliente' element={<FormEmpresaCliente/>}/>
                     <Route path='/formformapago' element={<FormFormaPago/>}/>
+                    <Route path='/formpagocuota' element={<FormCuotas/>}/>
                     <Route path='/formcontrato' element={<FormContrato/>}/>
+                    <Route path='/formrenovacion' element={<FormRenovacion/>}/>
+                    <Route path='/formenvio' element={<FormEnvio/>}/>
                 <Route path='/evaluaciones' element={<Evaluaciones/>} />
                 <Route path='/recetas' element={<Recetas/>} />
+                    <Route path='/formunidad' element={<FormUnidad/>}/>
+                    <Route path='/formingrediente' element={<FormIngrediente/>}/>
+                    
             </Routes>
         </div>
     </div>

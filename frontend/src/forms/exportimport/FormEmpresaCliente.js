@@ -44,10 +44,10 @@ export default function FormEmpresaCliente(){
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Tipo de negocio</Form.Label>
-                            <Form.Group as='select' type='text' name='t_negocio' onChange={handleChange}>
+                            <Form.Select type='text' name='t_negocio' onChange={handleChange}>
                                 <option>Tipo 1</option>
                                 <option>Tipo 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Direccion</Form.Label>
@@ -56,10 +56,10 @@ export default function FormEmpresaCliente(){
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Ciudad</Form.Label>
-                            <Form.Group as='select' type='text' name='id_cdad' onChange={handleChange}>
+                            <Form.Select type='text' name='id_cdad' onChange={handleChange}>
                                 <option>Ciudad 1</option>
                                 <option>Ciudad 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Rango minimo de evaluacion</Form.Label>

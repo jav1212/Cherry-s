@@ -29,17 +29,17 @@ export default function FormCatalogo(){
                 <Form className='w-100' onSubmit= {handleSubmit}>
                     <Form.Group>
                         <Form.Label>Empresa Productora</Form.Label>
-                            <Form.Group as='select' type='text' name='id_prod' onChange={handleChange}>
+                            <Form.Select type='text' name='id_prod' onChange={handleChange}>
                                 <option>Produc 1</option>
                                 <option>Produc 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Empresa Proveedora</Form.Label>
-                            <Form.Group as='select' type='text' name='id_prove' onChange={handleChange}>
+                            <Form.Select type='text' name='id_prove' onChange={handleChange}>
                                 <option>Provee 1</option>
                                 <option>Provee 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Button className='mt-4'variant="primary" type="submit">
                             Submit

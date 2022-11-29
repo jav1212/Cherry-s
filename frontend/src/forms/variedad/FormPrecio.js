@@ -32,32 +32,32 @@ export default function FormPrecio(){
                 <Form className='w-100' onSubmit= {handleSubmit}>
                     <Form.Group>
                         <Form.Label>Pais</Form.Label>
-                            <Form.Group as='select' type='text' name='pais' onChange={handleChange}>
+                            <Form.Select type='text' name='id_pais' onChange={handleChange}>
                                 <option disabled>Selecciona una opcion</option>
                                 <option>Espana</option>
                                 <option>Francia</option>
                                 <option>Chile</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Variedad</Form.Label>
-                            <Form.Group className=' mt-4' as='select' type='text' name='variedad' onChange={handleChange}>
+                            <Form.Select type='text' name='id_cereza' onChange={handleChange}>
+                                <option disabled>Selecciona una opcion</option>
                                 <option>Burlat</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Precio del Kg</Form.Label>
-                            <Form.Control type='text' name='monto' onChange={handleChange}/>
+                            <Form.Control type='text' name='precio' onChange={handleChange}/>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Calibre</Form.Label>
-                            <Form.Group className='mt-4' as='select' type='text' name='calibre' onChange={handleChange}>
+                            <Form.Select type='text' name='calibre' onChange={handleChange}>
                                 <option disabled>Selecciona una opcion</option>
                                 <option>Small</option>
                                 <option>Large</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
-
                     <Button className='mt-4'variant="primary" type="submit">
                             Submit
                     </Button>

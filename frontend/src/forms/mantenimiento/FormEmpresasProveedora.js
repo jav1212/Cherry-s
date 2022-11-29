@@ -33,18 +33,18 @@ export default function FormEmpresaProveedora(){
                             <Form.Control type='text' name='nombre' onChange={handleChange}/>
                     </Form.Group>
                     <Form.Group>
-                        <Form.Label>Region</Form.Label>
-                            <Form.Group as='select' type='text' name='region' onChange={handleChange}>
+                        <Form.Label>Ciudad</Form.Label>
+                            <Form.Select type='text' name='id_cdad' onChange={handleChange}>
                                 <option>Region 1</option>
                                 <option>Region 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Rama de Negocio</Form.Label>
-                            <Form.Group as='select' type='text' name='rama' onChange={handleChange}>
+                            <Form.Select type='text' name='rama_neg' onChange={handleChange}>
                                 <option>Rama 1</option>
                                 <option>Rama 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Button className='mt-4'variant="primary" type="submit">
                             Submit

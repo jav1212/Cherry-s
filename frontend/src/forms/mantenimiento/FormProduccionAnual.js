@@ -29,17 +29,17 @@ export default function FormEmpresaProductora(){
                 <Form className='w-100' onSubmit= {handleSubmit}>
                     <Form.Group>
                         <Form.Label>Empresa Productora</Form.Label>
-                            <Form.Group as='select' type='text' name='id_prod' onChange={handleChange}>
-                                <option>prod 1</option>
-                                <option>prod 2</option>
-                            </Form.Group>
+                        <Form.Select type='text' name='id_prod' onChange={handleChange}>
+                            <option>prod 1</option>
+                            <option>prod 2</option>
+                        </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Cultivos</Form.Label>
-                            <Form.Group as='select' type='text' name='id_cult' onChange={handleChange}>
-                                <option>cult 1</option>
-                                <option>cult 2</option>
-                            </Form.Group>
+                        <Form.Select type='text' name='id_cult' onChange={handleChange}>
+                            <option>cult 1</option>
+                            <option>cult 2</option>
+                        </Form.Select>
                     </Form.Group>
                     <Button className='mt-4'variant="primary" type="submit">
                             Submit

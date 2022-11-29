@@ -16,6 +16,7 @@ export default function ExportImport() {
             <div className=' d-flex flex-wrap align-content-between justify-content-center gap-4 mb-xxl-5'>
                 <Button href='/formempresacliente' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Empresa cliente</Button>
                 <Button href='/formformapago' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Forma de Pago</Button>
+                <Button href='/formpagocuota' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Pago de Cuotas</Button>
                 <Button href='/formcontrato' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Contrato</Button>
                 <Button href='/formrenovaciones' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Renovaciones</Button>
                 <Button href='/formenvio' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Envio</Button>

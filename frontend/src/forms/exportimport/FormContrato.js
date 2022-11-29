@@ -77,7 +77,7 @@ export default function FormContrato(){
                     <h2>Detalles de contrato</h2>
                     <Form.Group>
                     <Form.Label>Cultivo</Form.Label>
-                        <Form.Select type='text' name='cultivo' onChange={handleChange}>
+                        <Form.Select type='text' name='id_cult' onChange={handleChange}>
                             <option disabled>Selecciona una opcion</option>
                             <option>Cultivo 1</option>
                             <option>Cultivo 2</option>
@@ -85,11 +85,11 @@ export default function FormContrato(){
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Cantidad</Form.Label>
-                        <Form.Control type='text' name='' onChange={handleChange}/>
+                        <Form.Control type='text' name='ctd' onChange={handleChange}/>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Posible Fecha de envio</Form.Label>
-                        <Form.Control type='date' name='' onChange={handleChange} />
+                        <Form.Control type='date' name='fe_envio' onChange={handleChange} />
                     </Form.Group>
                     <Button className='mt-4'variant="primary" type="submit">
                             Submit

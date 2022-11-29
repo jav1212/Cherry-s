@@ -32,24 +32,17 @@ export default function FormEmpresaProductora(){
                 <Form className='w-100' onSubmit= {handleSubmit}>
                     <Form.Group>
                         <Form.Label>Asociacion Regional</Form.Label>
-                            <Form.Group as='select' type='text' name='tipo' onChange={handleChange}>
+                            <Form.Select type='text' name='id_asoc' onChange={handleChange}>
                                 <option>Asoc 1</option>
                                 <option>Asoc 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Proveedor</Form.Label>
-                            <Form.Group as='select' type='text' name='tipo' onChange={handleChange}>
+                            <Form.Select type='text' name='id_prove' onChange={handleChange}>
                                 <option>provee 1</option>
                                 <option>provee 1</option>
-                            </Form.Group>
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label>Vigencia</Form.Label>
-                            <Form.Group as='select' type='text' name='tipo' onChange={handleChange}>
-                                <option>Activo</option>
-                                <option>Vencido</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                 </Form>
             </div>

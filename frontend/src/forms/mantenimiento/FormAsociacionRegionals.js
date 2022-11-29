@@ -35,19 +35,12 @@ export default function FormAsociacionRegional(){
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Region</Form.Label>
-                            <Form.Group as='select' type='text' name='region' onChange={handleChange}>
+                            <Form.Select type='text' name='id_reg' onChange={handleChange}>
+                                <option disabled>Selecciona una opcion</option>
                                 <option>Region 1</option>
                                 <option>Region 2</option>
                                 <option>Region 3</option>
-                            </Form.Group>
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label>Tipo de asesoramiento</Form.Label>
-                            <Form.Group as='select' type='text' name='tipoasesor' onChange={handleChange}>
-                                <option>asesor 1</option>
-                                <option>asesor 2</option>
-                                <option>asesor 3</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Button className='mt-4'variant="primary" type="submit">
                             Submit

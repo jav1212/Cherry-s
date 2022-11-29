@@ -39,33 +39,33 @@ export default function FormVariedad(){
                     </Form.Group>
                     <Form.Group controlId='formEspecie'>
                         <Form.Label>Especie</Form.Label>
-                            <Form.Group className=' mt-4' as='select' type='text' name='especie' defaultValue='Prunus' onChange={handleChange}>
+                            <Form.Select type='text' name='especie' defaultValue='Prunus' onChange={handleChange}>
                                 <option disabled>Selecciona una opcion</option>
                                 <option>Prunus avium</option>
                                 <option>Prunus cerasus</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group controlId='formPrecocidad'>
                         <Form.Label>Precocidad</Form.Label>
-                            <Form.Group className=' mt-4' as='select' type='text' name='precocidad' defaultValue='Temprana' onChange={handleChange}>
+                            <Form.Select type='text' name='preco' defaultValue='Temprana' onChange={handleChange}>
                                 <option disabled>Selecciona una opcion</option>
                                 <option>Temprana</option>
                                 <option>Tardia</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group controlId='formDescripcion'>
                         <Form.Label>Descripcion</Form.Label>
-                            <Form.Group className=' w-100' as='textarea' rows={3} name='descripcion' onChange={handleChange}>
+                            <Form.Group className=' w-100' as='textarea' rows={3} name='descrip' onChange={handleChange}>
                             </Form.Group>
                     </Form.Group>
                     <Form.Group controlId='formPaisOri'>
                         <Form.Label>Pais Origen</Form.Label>
-                            <Form.Group className=' mt-4' as='select' type='text' name='paisorigen' defaultValue='Pais' onChange={handleChange}>
+                            <Form.Select type='text' name='paisorigen' defaultValue='id_pais' onChange={handleChange}>
                                 <option disabled>Selecciona una opcion</option>
                                 <option>Espana</option>
                                 <option>Francia</option>
                                 <option>Chile</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Button className='mt-4'variant="primary" type="submit">
                             Submit

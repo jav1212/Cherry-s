@@ -13,6 +13,8 @@ export default function FormFormaPago(){
     })
 
     const handleChange = (e) => {
+        console.log(e.target.name)
+        console.log(e.target.value)
         setForma({
             ...forma,
             [e.target.name] : e.target.value,
@@ -35,10 +37,7 @@ export default function FormFormaPago(){
         const {empresa , tipo, maxenvio,
             maxpago, numero, porcion} = forma
 
-           // console.log(forma)
-        if((forma.tipo === 'Contado')){
-            alert('seleccionaste contado')
-        }
+           console.log(forma)
     }
 
     return(
@@ -55,10 +54,10 @@ export default function FormFormaPago(){
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Tipo</Form.Label>
-                        <Form.Select type='text' name='tipo' onChange={(e) => {handleChange(e); handleOption(); }}>
-                            <option disabled>Selecciona una opcion</option>
-                            <option>Contado</option>
-                            <option>Cuotas</option>
+                        <Form.Select type='text' name='tipo' defaultValue='Selecciona una opcion' onChange={(e) => {handleChange(e); handleOption(); }}>
+                            <option hidden>Selecciona una opcion</option>
+                            <option value='Contado'>Contado</option>
+                            <option value='Cuotas'>Cuotas</option>
                         </Form.Select>
                     </Form.Group>
                     <Button className='mt-4'variant="primary" type="submit">

@@ -37,28 +37,35 @@ export default function FormEmpresaProductora(){
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Tipo de empresa</Form.Label>
-                            <Form.Group as='select' type='text' name='tipo' onChange={handleChange}>
+                            <Form.Select type='text' name='tipo' onChange={handleChange}>
                                 <option>Empresa</option>
                                 <option>Cooperativa</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Direccion</Form.Label>
-                            <Form.Group className='w-100' as='textarea' rows={3} name='direccion' onChange={handleChange}/>
+                            <Form.Group className='w-100' as='textarea' rows={3} name='direc' onChange={handleChange}/>
+                    </Form.Group>
+                    <Form.Group>
+                        <Form.Label>Region</Form.Label>
+                            <Form.Select type='text' name='id_reg' onChange={handleChange}>
+                                <option>region 1</option>
+                                <option>region 2</option>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Asociacion Regional</Form.Label>
-                            <Form.Group as='select' type='text' name='asociacionreg' onChange={handleChange}>
+                            <Form.Select type='text' name='id_asoc' onChange={handleChange}>
                                 <option>asociacion 1</option>
                                 <option>asociacion 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Cooperativa</Form.Label>
-                            <Form.Group as='select' type='text' name='cooperativa' onChange={handleChange}>
+                            <Form.Select type='text' name='id_coop' onChange={handleChange}>
                                 <option>cooperativa 1</option>
                                 <option>cooperativa 2</option>
-                            </Form.Group>
+                            </Form.Select>
                     </Form.Group>
                     <Button className='mt-4'variant="primary" type="submit">
                             Submit
