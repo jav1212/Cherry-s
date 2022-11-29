@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 export default function FormCatalogo(){
     const[catalogo , setCatalogo] =useState({
-        empresaprod: '',
-        empresaprov: ''
+        id_prod: '',
+        id_prove: ''
     })
 
     const handleChange = (e) => {
@@ -16,8 +16,8 @@ export default function FormCatalogo(){
     }
 
     const handleSubmit = () => {
-        const {empresaprod, empresaprov} = catalogo
-        if((empresaprod === '')||(empresaprov === '')){
+        const {id_prod, id_prove} = catalogo
+        if((id_prod === '')||(id_prove === '')){
             alert('campo vacio')
             return
         }

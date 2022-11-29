@@ -4,9 +4,9 @@ import { useState } from 'react'
 
 export default function FormPrograma(){
     const[programa , setPrograma] =useState({
-        empresaprod: '',
-        variedad: '',
-        persona: ''
+        id_prod: '',
+        id_crz: '',
+        id_per: ''
     })
 
     const handleChange = (e) => {
@@ -17,8 +17,8 @@ export default function FormPrograma(){
     }
 
     const handleSubmit = () => {
-        const {empresaprod, variedad, persona} = programa
-        if((empresaprod === '')||(variedad === '')||(persona === '')){
+        const {id_prod, id_crz, id_per} = programa
+        if((id_prod === '')||(id_crz === '')||(id_per === '')){
             alert('campo vacio')
             return
         }

@@ -5,13 +5,12 @@ import { useState } from 'react'
 export default function FormEmpresaCliente(){
     const[empresa , setEmpresa] =useState({
         nombre: '',
-        tipo: '',
-        direccion: '',
-        ciudad: '',
-        region: '',
-        rangominimoeva: '',
-        rangomaximoeva: '',
-        porcentajeacepta: ''
+        t_negocio: '',
+        direc: '',
+        id_cdad: '',
+        rgo_inf: '',
+        rgo_sup: '',
+        prt_acep: ''
     })
 
     const handleChange = (e) => {
@@ -22,13 +21,12 @@ export default function FormEmpresaCliente(){
     }
 
     const handleSubmit = () => {
-        const {nombre , tipo, direccion,
-            ciudad, region, rangominimoeva,
-            rangomaximoeva,porcentajeacepta} = empresa
-        if((nombre === '')||(tipo === '')||
-        (direccion === '')||(ciudad === '')||
-        (region === '')||(rangominimoeva === '')||
-        (rangomaximoeva === '')||(porcentajeacepta === '')){
+        const {nombre , t_negocio, direc,
+            id_cdad, rgo_inf,
+            rgo_sup,prt_acep} = empresa
+        if((nombre === '')||(t_negocio === '')||
+        (direc === '')||(id_cdad === '')||
+        (rgo_inf === '')||(rgo_sup === '')||(prt_acep === '')){
             alert('campo vacio')
             return
         }

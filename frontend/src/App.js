@@ -70,7 +70,6 @@ function App() {
                 <Route path='/recetas' element={<Recetas/>} />
                     <Route path='/formunidad' element={<FormUnidad/>}/>
                     <Route path='/formingrediente' element={<FormIngrediente/>}/>
-                    
             </Routes>
         </div>
     </div>

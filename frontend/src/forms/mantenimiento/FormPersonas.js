@@ -4,11 +4,11 @@ import { useState } from 'react'
 
 export default function FormPersona(){
     const[persona , setPersona] =useState({
-        docident: '',
-        primernombre: '',
-        segundonombre: '',
-        primerapellido: '',
-        segundoapellido: ''
+        doc_id: '',
+        nombre1: '',
+        nombre2: '',
+        apellido1: '',
+        apellido2: ''
     })
 
     const handleChange = (e) => {
@@ -19,10 +19,10 @@ export default function FormPersona(){
     }
 
     const handleSubmit = () => {
-        const {docident, primernombre , segundonombre, primerapellido, segundoapellido} = persona
-        if((docident === '')||(primernombre === '')||
-        (segundonombre === '')||(primerapellido === '')||
-        (segundoapellido === '')){
+        const {docident, nombre1 , nombre2, apellido1, apellido2} = persona
+        if((docident === '')||(nombre1 === '')||
+        (nombre2 === '')||(apellido1 === '')||
+        (apellido2 === '')){
             alert('campo vacio')
             return
         }

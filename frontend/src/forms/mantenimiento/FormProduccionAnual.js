@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 export default function FormEmpresaProductora(){
     const[prodanual , setProanual] =useState({
-        empresa: '',
-        cultivo: ''
+        id_prod: '',
+        id_cult: ''
     })
 
     const handleChange = (e) => {
@@ -16,8 +16,8 @@ export default function FormEmpresaProductora(){
     }
 
     const handleSubmit = () => {
-        const {empresa , cultivo} = prodanual
-        if((empresa === '')||(cultivo === '')){
+        const {id_prod , id_cult} = prodanual
+        if((id_prod === '')||(id_cult === '')){
             alert('campo vacio')
             return
         }

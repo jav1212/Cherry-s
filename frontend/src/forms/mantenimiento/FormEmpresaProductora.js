@@ -6,10 +6,10 @@ export default function FormEmpresaProductora(){
     const[empresa , setEmpresa] =useState({
         nombre: '',
         tipo: '',
-        direccion: '',
-        region: '',
-        asociacionreg: '',
-        cooperativa: ''
+        direc: '',
+        id_reg: '',
+        id_asoc: '',
+        id_coop: ''
     })
 
     const handleChange = (e) => {
@@ -20,8 +20,12 @@ export default function FormEmpresaProductora(){
     }
 
     const handleSubmit = () => {
-        const {nombre , tipo, direccion, region, asociacionreg, cooperativa} = empresa
-        if((nombre === '')||(tipo === '')||(direccion === '')||(region === '')||(asociacionreg === '')||(cooperativa === '')){
+        const {nombre , tipo, 
+            
+            direc, id_reg, id_asoc, id_coop} = empresa
+        if((nombre === '')||(tipo === '')||
+        (direc === '')||(id_reg === '')||
+        (id_asoc === '')||(id_coop === '')){
             alert('campo vacio')
             return
         }
@@ -49,8 +53,8 @@ export default function FormEmpresaProductora(){
                     <Form.Group>
                         <Form.Label>Region</Form.Label>
                             <Form.Select type='text' name='id_reg' onChange={handleChange}>
-                                <option>region 1</option>
-                                <option>region 2</option>
+                                <option>Region 1</option>
+                                <option>Region 2</option>
                             </Form.Select>
                     </Form.Group>
                     <Form.Group>
@@ -63,8 +67,8 @@ export default function FormEmpresaProductora(){
                     <Form.Group>
                         <Form.Label>Cooperativa</Form.Label>
                             <Form.Select type='text' name='id_coop' onChange={handleChange}>
-                                <option>cooperativa 1</option>
-                                <option>cooperativa 2</option>
+                                <option>Cooperativa 1</option>
+                                <option>Cooperativa 2</option>
                             </Form.Select>
                     </Form.Group>
                     <Button className='mt-4'variant="primary" type="submit">

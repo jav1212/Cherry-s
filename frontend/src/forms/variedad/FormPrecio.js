@@ -4,23 +4,23 @@ import { useState } from 'react'
 
 export default function FormPrecio(){
 
-    const [precio, setPrecio] = useState({
-        pais: '',
-        variedad: '',
-        monto: '',
+    const [preciopais, setPreciopais] = useState({
+        id_pais: '',
+        id_cereza: '',
+        precio: '',
         calibre: ''
     })
 
     const handleChange = (e) => {
-        setPrecio({
-            ...precio,
+        setPreciopais({
+            ...preciopais,
             [e.target.name] : e.target.value
         })
     }
 
     const handleSubmit = () => {
-        const {pais,variedad,monto,calibre} = precio
-        if((pais === '')||(variedad === '')||(monto === '')||(calibre === '')){
+        const {id_pais,id_cereza,precio,calibre} = preciopais
+        if((id_pais === '')||(id_cereza === '')||(precio === '')||(calibre === '')){
             alert('campo vacio')
             return
         }

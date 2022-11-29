@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 export default function FormCuotas(){
     const[cuota , setCuota] =useState({
-        empresaprod: '',
-        empresaclient: '',
+        id_prod_cont: '',
+        id_client_cont: '',
         monto: ''
     })
 
@@ -17,8 +17,8 @@ export default function FormCuotas(){
     }
 
     const handleSubmit = () => {
-        const {empresaprod, empresaclient, monto} = cuota
-        if((empresaprod === '')||(empresaclient === '')||
+        const {id_prod_cont, id_client_cont, monto} = cuota
+        if((id_prod_cont === '')||(id_client_cont === '')||
         (monto === '')){
             alert('campo vacio')
             return

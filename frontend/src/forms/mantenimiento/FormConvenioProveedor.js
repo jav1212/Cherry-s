@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 export default function FormConvenioProveedor(){
     const[convprov , setConvprov] =useState({
-        empresaprod: '',
-        empresaprov: ''
+        id_prod: '',
+        id_prove: ''
     })
 
     const handleChange = (e) => {
@@ -16,8 +16,8 @@ export default function FormConvenioProveedor(){
     }
 
     const handleSubmit = () => {
-        const {empresaprod, empresaprov} = convprov
-        if((empresaprod === '')||(empresaprov === '')){
+        const {id_prod, id_prove} = convprov
+        if((id_prod === '')||(id_prove === '')){
             alert('campo vacio')
             return
         }
@@ -29,7 +29,7 @@ export default function FormConvenioProveedor(){
                 <Form className='w-100' onSubmit= {handleSubmit}>
                     <Form.Group>
                         <Form.Label>Empresa Productora</Form.Label>
-                            <Form.Select type='text' name='id_cat_prod' onChange={handleChange}>
+                            <Form.Select type='text' name='id_prod' onChange={handleChange}>
                                 <option>Produc 1</option>
                                 <option>Produc 2</option>
                             </Form.Select>

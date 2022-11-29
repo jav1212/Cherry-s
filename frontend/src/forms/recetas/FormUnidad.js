@@ -6,8 +6,8 @@ export default function FormUnidad(){
     const[unidad , setUnidad] =useState({
         nombre: '',
         tipo: '',
-        abreviacion: '',
-        descripcion: ''
+        abrev: '',
+        descrip: ''
     })
 
     const handleChange = (e) => {
@@ -18,9 +18,9 @@ export default function FormUnidad(){
     }
 
     const handleSubmit = () => {
-        const {nombre, tipo, abreviacion, descripcion} = unidad
+        const {nombre, tipo, abrev, descrip} = unidad
         if((nombre === '')||(tipo === '')||
-        (abreviacion === '')||(descripcion === '')){
+        (abrev === '')||(descrip === '')){
             alert('campo vacio')
             return
         }

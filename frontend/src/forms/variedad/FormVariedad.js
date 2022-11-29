@@ -7,9 +7,9 @@ export default function FormVariedad(){
     const [variedad, setVariedad] = useState({
         nombre: '',
         especie: '',
-        precocidad: '',
-        descripcion: '',
-        paisorigen: ''
+        preco: '',
+        descrip: '',
+        id_pais: ''
     })
 
     const handleChange = (e) => {
@@ -20,8 +20,8 @@ export default function FormVariedad(){
     }
 
     const handleSubmit = () => {
-        const {nombre, especie,precocidad,descripcion,paisorigen} = variedad
-        if((nombre === '')||(especie === '')||(precocidad === '')||(descripcion === '')||(paisorigen === '')){
+        const {nombre, especie,preco,descrip,id_pais} = variedad
+        if((nombre === '')||(especie === '')||(preco === '')||(descrip === '')||(id_pais === '')){
             alert('campo vacio')
             return
         }

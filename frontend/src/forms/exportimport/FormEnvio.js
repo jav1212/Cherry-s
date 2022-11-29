@@ -4,12 +4,12 @@ import { useState } from 'react'
 
 export default function FormEnvio(){
     const[envio , setEnvio] =useState({
-        empresaprod: '',
-        empresaclient: '',
-        detcontrato: '',
-        fechaenvio: '',
-        fecharecoleccion: '',
-        porcentajeaceptacion: ''
+        id_prod_cont: '',
+        id_client_cont: '',
+        id_cont: '',
+        fe_env: '',
+        fe_recolec: '',
+        cantidad: ''
     })
 
     const handleChange = (e) => {
@@ -20,11 +20,11 @@ export default function FormEnvio(){
     }
 
     const handleSubmit = () => {
-        const {empresaprod , empresaclient, detcontrato,
-            fechaenvio, fecharecoleccion, porcentajeaceptacion} = envio
-        if((empresaprod === '')||(empresaclient === '')||
-        (detcontrato === '')||(fechaenvio === '')||
-        (fecharecoleccion === '')||(porcentajeaceptacion === '')){
+        const {id_prod_cont, id_client_cont, id_cont,
+            fe_env, fe_recolec, cantidad} = envio
+        if((id_prod_cont === '')||(id_client_cont === '')||
+        (id_cont === '')||(fe_env === '')||
+        (fe_recolec === '')||(cantidad === '')){
             alert('campo vacio')
             return
         }

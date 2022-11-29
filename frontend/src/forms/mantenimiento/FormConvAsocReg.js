@@ -4,9 +4,8 @@ import { useState } from 'react'
 
 export default function FormEmpresaProductora(){
     const[convasoreg , setConvasoreg] =useState({
-        asociacionreg: '',
-        proveedor: '',
-        vigencia: ''
+        id_asoc: '',
+        id_prove: ''
     })
 
     const handleChange = (e) => {
@@ -17,8 +16,8 @@ export default function FormEmpresaProductora(){
     }
 
     const handleSubmit = () => {
-        const {asociacionreg, proveedor, vigencia} = convasoreg
-        if((asociacionreg === '')||(proveedor === '')||(vigencia === '')){
+        const {id_asoc, id_prove} = convasoreg
+        if((id_asoc === '')||(id_prove === '')){
             alert('campo vacio')
             return
         }

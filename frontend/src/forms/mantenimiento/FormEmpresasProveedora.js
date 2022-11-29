@@ -5,8 +5,8 @@ import { useState } from 'react'
 export default function FormEmpresaProveedora(){
     const[proveedor , setProveedor] =useState({
         nombre: '',
-        region: '',
-        rama: ''
+        id_cdad: '',
+        rama_neg: ''
     })
 
     const handleChange = (e) => {
@@ -17,8 +17,8 @@ export default function FormEmpresaProveedora(){
     }
 
     const handleSubmit = () => {
-        const {nombre , region, rama} = proveedor
-        if((nombre === '')||(region === '')||(rama === '')){
+        const {nombre , id_cdad, rama_neg} = proveedor
+        if((nombre === '')||(id_cdad === '')||(rama_neg === '')){
             alert('campo vacio')
             return
         }
@@ -35,8 +35,8 @@ export default function FormEmpresaProveedora(){
                     <Form.Group>
                         <Form.Label>Ciudad</Form.Label>
                             <Form.Select type='text' name='id_cdad' onChange={handleChange}>
-                                <option>Region 1</option>
-                                <option>Region 2</option>
+                                <option>Ciudad 1</option>
+                                <option>Ciudad 2</option>
                             </Form.Select>
                     </Form.Group>
                     <Form.Group>

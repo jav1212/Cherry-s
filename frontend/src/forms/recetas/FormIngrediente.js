@@ -5,9 +5,9 @@ import { useState } from 'react'
 export default function FormIngrediente(){
     const[ingrediente , setIngrediente] =useState({
         nombre: '',
-        tipo: '',
-        descripcion: '',
-        medicion: ''
+        medicion: '',
+        descrip: '',
+        medicion_mix: ''
     })
 
     const handleChange = (e) => {
@@ -18,9 +18,9 @@ export default function FormIngrediente(){
     }
 
     const handleSubmit = () => {
-        const {nombre, tipo, descripcion, medicion} = ingrediente
-        if((nombre === '')||(tipo === '')||
-        (descripcion === '')||(medicion === '')){
+        const {nombre, medicion, descrip, medicion_mix} = ingrediente
+        if((nombre === '')||(medicion === '')||
+        (descrip === '')||(medicion_mix === '')){
             alert('campo vacio')
             return
         }

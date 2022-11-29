@@ -4,14 +4,13 @@ import { useState } from 'react'
 
 export default function FormCultivo(){
     const[cultivo , setCultivo] =useState({
-        nombre: '',
         calibre: '',
-        dispini: '',
-        dispfin: '',
-        prodesperada: '',
-        maximo: '',
-        productora: '',
-        variedad: ''
+        disp_i: '',
+        disp_f: '',
+        prod_esp: '',
+        max_dist_exp: '',
+        id_prod: '',
+        id_crz: ''
     })
 
     const handleChange = (e) => {
@@ -22,13 +21,13 @@ export default function FormCultivo(){
     }
 
     const handleSubmit = () => {
-        const {nombre , calibre, dispini,
-                dispfin, prodesperada, maximo,
-                productora, variedad} = cultivo
-        if((nombre === '')||(calibre === '')||
-        (dispini === '')||(dispfin === '')||
-        (prodesperada === '')||(maximo === '')||
-        (productora === '')||(variedad === '')){
+        const {calibre, disp_i,
+            disp_f, prod_esp, max_dist_exp,
+            id_prod, id_crz} = cultivo
+        if((calibre === '')||
+        (disp_i === '')||(disp_f === '')||
+        (prod_esp === '')||(max_dist_exp === '')||
+        (id_prod === '')||(id_crz === '')){
             alert('campo vacio')
             return
         }

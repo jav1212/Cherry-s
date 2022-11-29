@@ -4,14 +4,14 @@ import { useState } from 'react'
 
 export default function FormContrato(){
     const[contrato , setContrato] =useState({
-        empresaprod: '',
-        empresaclient: '',
-        tipotransp: '',
-        porcentajedescuen: '',
-        formapago: '',
-        cultivo: '',
-        cantidad: '',
-        posiblefecha: ''
+        id_prod: '',
+        id_client: '',
+        transp: '',
+        descuento: '',
+        id_fr_pg: '',
+        id_cult: '',
+        ctd: '',
+        fe_envio: ''
     })
 
     const handleChange = (e) => {
@@ -22,13 +22,13 @@ export default function FormContrato(){
     }
 
     const handleSubmit = () => {
-        const {empresaprod, empresaclient, tipotransp,
-            porcentajedescuen, formapago, cultivo,
-            cantidad, posiblefecha} = contrato
-        if((empresaprod === '')||(empresaclient === '')||
-        (tipotransp === '')||(porcentajedescuen === '')||
-        (formapago === '')||(cultivo === '')||
-        (cantidad = '')||(posiblefecha = '')){
+        const {id_prod, id_client, transp,
+            descuento, id_fr_pg, id_cult,
+            ctd, fe_envio} = contrato
+        if((id_prod === '')||(id_client === '')||
+        (transp === '')||(descuento === '')||
+        (id_fr_pg === '')||(id_cult === '')||
+        (ctd === '')||(fe_envio === '')){
             alert('campo vacio')
             return
         }

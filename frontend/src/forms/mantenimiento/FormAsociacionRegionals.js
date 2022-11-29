@@ -6,8 +6,7 @@ export default function FormAsociacionRegional(){
     
     const[asociacion, setAsociacion] =useState({
         nombre: '',
-        region: '',
-        tipoasesor: ''
+        region: ''
     })
 
     const handleChange = (e) => {
@@ -18,8 +17,8 @@ export default function FormAsociacionRegional(){
     }
 
     const handleSubmit = () => {
-        const {nombre , region, tipoasesor} = asociacion
-        if((nombre === '')||(region === '')||(tipoasesor === '')){
+        const {nombre , id_reg} = asociacion
+        if((nombre === '')||(id_reg === '')){
             alert('campo vacio')
             return
         }
