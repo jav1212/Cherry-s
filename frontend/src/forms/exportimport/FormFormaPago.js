@@ -37,7 +37,6 @@ export default function FormFormaPago(){
         const {empresa , tipo, maxenvio,
             maxpago, numero, porcion} = forma
 
-           console.log(forma)
     }
 
     return(
