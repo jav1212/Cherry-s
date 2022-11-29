@@ -33,6 +33,7 @@ export default function FormPrecio(){
                     <Form.Group>
                         <Form.Label>Pais</Form.Label>
                             <Form.Group as='select' type='text' name='pais' onChange={handleChange}>
+                                <option disabled>Selecciona una opcion</option>
                                 <option>Espana</option>
                                 <option>Francia</option>
                                 <option>Chile</option>
@@ -51,6 +52,7 @@ export default function FormPrecio(){
                     <Form.Group>
                         <Form.Label>Calibre</Form.Label>
                             <Form.Group className='mt-4' as='select' type='text' name='calibre' onChange={handleChange}>
+                                <option disabled>Selecciona una opcion</option>
                                 <option>Small</option>
                                 <option>Large</option>
                             </Form.Group>

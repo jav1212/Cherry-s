@@ -40,6 +40,7 @@ export default function FormVariedad(){
                     <Form.Group controlId='formEspecie'>
                         <Form.Label>Especie</Form.Label>
                             <Form.Group className=' mt-4' as='select' type='text' name='especie' defaultValue='Prunus' onChange={handleChange}>
+                                <option disabled>Selecciona una opcion</option>
                                 <option>Prunus avium</option>
                                 <option>Prunus cerasus</option>
                             </Form.Group>
@@ -47,6 +48,7 @@ export default function FormVariedad(){
                     <Form.Group controlId='formPrecocidad'>
                         <Form.Label>Precocidad</Form.Label>
                             <Form.Group className=' mt-4' as='select' type='text' name='precocidad' defaultValue='Temprana' onChange={handleChange}>
+                                <option disabled>Selecciona una opcion</option>
                                 <option>Temprana</option>
                                 <option>Tardia</option>
                             </Form.Group>
@@ -59,6 +61,7 @@ export default function FormVariedad(){
                     <Form.Group controlId='formPaisOri'>
                         <Form.Label>Pais Origen</Form.Label>
                             <Form.Group className=' mt-4' as='select' type='text' name='paisorigen' defaultValue='Pais' onChange={handleChange}>
+                                <option disabled>Selecciona una opcion</option>
                                 <option>Espana</option>
                                 <option>Francia</option>
                                 <option>Chile</option>

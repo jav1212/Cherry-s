@@ -26,6 +26,8 @@ export default function Mantenimiento() {
                 <Button href='/formconvenioasociacion' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Convenios con Asociacion Regional</Button>
                 <Button href='/formcatalogo' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Catalogo</Button>
                 <Button href='/formconvenioproveedor' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Convenios con proveedores</Button>
+                <Button href='/formpersona' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Personas</Button>
+                <Button href='/formprogramaapadrinamiento' className=' w-25 text-black bg-light rounded-0 border border-2 border-dark'>Programa de apadrinamiento</Button>    
             </div>
         </>
     )
